@@ -16,10 +16,37 @@ code {
 Variables
 ===============
 */
-
+:root {
+  --background: #f0f0f5;
+  --text-primary: #3a3a3a;
+  --text-secondary: #a8a8b3;
+  --text-tertiary: #6c6c80;
+}
+[data-theme="dark"] {
+  --background: #3a3a3a;
+  --text-primary: #f0f0f5;
+  --text-secondary: #a8a8b3;
+  --text-tertiary: #6c6c80;
+}
 
 /*
 =============== 
 Global Styles
 ===============
 */
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  height: calc(100vh - 40px);
+  transition: all .5s;
+}
+button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  transition: all .5s;
+}
