@@ -21,12 +21,16 @@ Variables
   --text-primary: #3a3a3a;
   --text-secondary: #a8a8b3;
   --text-tertiary: #6c6c80;
+  --icon-primary: url(./assets/light.png);
+  --logo-primary: url(./assets/logo-light.png);
 }
 [data-theme="dark"] {
   --background: #3a3a3a;
   --text-primary: #f0f0f5;
   --text-secondary: #a8a8b3;
   --text-tertiary: #6c6c80;
+  --icon-primary: url(./assets/dark.png);
+  --logo-primary: url(./assets/logo-dark.png);
 }
 
 /*

@@ -8,3 +8,5 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
  */
+const hello = "hello";
+export default hello;
