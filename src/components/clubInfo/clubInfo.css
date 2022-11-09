@@ -1,0 +1,23 @@
+.club_info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70rem;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    text-align: center;
+}
+.club_title {
+    color: var(--text-promo);
+    max-width: 50rem;
+}
+.club_text_one {
+    max-width: 50rem;
+    margin: auto;
+}
+.club_text_two {
+    color: var(--text-promo);
+    max-width: 50rem;
+    margin: auto;
+}

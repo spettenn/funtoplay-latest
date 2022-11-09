@@ -3,7 +3,8 @@ import './App.css';
 import useLocalStorage from 'use-local-storage';
 import Nav from "../src/components/Header/nav";
 import Landing from "../src/components/landing/landing";
-import CardsTop from "../src/components/cardsTop/cardsTop";
+import CardsTop from "./components/cards/cardsTop";
+import ClubInfo from "../src/components/clubInfo/clubInfo";
 
 
 
@@ -24,6 +25,7 @@ function FunToPlay() {
       </div>
       <Landing />
       <CardsTop />
+      <ClubInfo />
     </div>
   );
 }
