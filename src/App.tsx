@@ -1,25 +1,34 @@
 import React from 'react';
 import './App.css';
 import useLocalStorage from 'use-local-storage';
+import Nav from "../src/components/Header/nav";
+import Landing from "../src/components/landing/landing";
+import CardsTop from "../src/components/cardsTop/cardsTop";
+
 
 
 
 function FunToPlay() {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+ const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
   
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+  }; 
 
   return (
     <div className="App" data-theme={theme} >
-
-      <h1>Learn</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime eos delectus nulla cum earum beatae, veritatis numquam alias odit perspiciatis. Ducimus facere delectus soluta! Repellat, hic veritatis! Magni, asperiores!</p>
-      <button onClick={toggleTheme}>Toggle {theme === 'light' ? 'dark' : 'light'} Theme</button>
+      <div className='Nav_container'>
+        <Nav />
+        <button onClick={toggleTheme}>{theme === 'light' ? 'dark' : 'light'}</button>
+      </div>
+      <Landing />
+      <CardsTop />
     </div>
   );
 }
 
 export default FunToPlay;
+
+
+

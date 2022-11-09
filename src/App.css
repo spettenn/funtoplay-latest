@@ -1,7 +1,11 @@
-.App {
-  text-align: center;
-}
+@import "../src/components/Header/nav.css";  
+@import "../src/components/landing/landing.css";
+@import "../src/components/cardsTop/cards.css";
 
+/*
+FONTS USED:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap');
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,12 +31,60 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --background: #f0f0f5;
+  --text-primary: #2F4858;
+  --text-secondary: #a8a8b3;
+  --text-tertiary: #6c6c80;
+  --icon-primary: url(./assets/light.png);
+  --logo-primary: url(./assets/logo-light.png);
+  --text-promo: #70BF48;
 }
+[data-theme="dark"] {
+  --background: #2F4858;
+  --text-primary: #f0f0f5;
+  --text-secondary: #a8a8b3;
+  --text-tertiary: #6c6c80;
+  --icon-primary: url(./assets/dark.png);
+  --logo-primary: url(./assets/logo-dark.png);
+}
+.nav_logo {
+  content: var(--logo-primary);
+  background-repeat: no-repeat;
+}
+.nav_icon {
+  background-image: var(--icon-primary);
+  background-repeat: no-repeat;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  height: fit-content;
+  transition: all .5s;
+}
+button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
+  transition: all .5s;
+}
+
+/*
+=============== 
+cotainer layout
+===============
+*/
